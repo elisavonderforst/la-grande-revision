@@ -13,14 +13,28 @@
   }
 
   .wrapper-1 {
+    display: flex;
+    justify-content: end;
   }
 
   .wrapper-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .wrapper-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
   }
 
   .wrapper-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    .box {
+      width: 50%;
+    }
   }
 }

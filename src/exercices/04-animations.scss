@@ -1,3 +1,34 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    background-color: #287196;
+  }
+
+  25% {
+    width: 50%;
+    background-color: #023047;
+  }
+
+  50% {
+    width: 0;
+    background-color: #287196;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 .animations {
   .spinner {
     width: 50px;
@@ -6,6 +37,10 @@
     border-radius: 50%;
     border: 5px solid #8ecae6;
     border-top-color: #023047;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
   .progress {
@@ -20,5 +55,6 @@
     height: 100%;
     background: #023047;
     border-radius: 10px;
+    animation: progress 5s linear infinite;
   }
 }
